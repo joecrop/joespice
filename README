@@ -1,0 +1,18 @@
+TO USE:
+
+you must have Mentor Graphics' ModelSim
+
+in source/sparse directory
+%make
+
+in source directory
+%make
+
+There are two test "ckt" files that use co-simulation.
+
+after compiling typ:
+
+%joeSpice test.ckt
+
+enjoy!
+

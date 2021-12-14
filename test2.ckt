@@ -1,0 +1,20 @@
+vdd 1 0 5
+mp1 2 3 1 1 pmos 20e-6 1e-6
+mn1 2 3 0 0 nmos 10e-6 1e-6
+cl1 2 0 1e-12
+mp2 clk 2 1 1 pmos 20e-6 1e-6
+mn2 clk 2 0 0 nmos 10e-6 1e-6
+cl2 clk 0 1e-12
+mp3 3 clk 1 1 pmos 20e-6 1e-6
+mn3 3 clk 0 0 nmos 10e-6 1e-6
+cl3 3 0 1e-12
+
+mp4 final out 1 1 pmos 20e-6 1e-6
+mn4 final out 0 0 nmos 10e-6 1e-6
+
+.tran 0.05e-9 10e-9
+.ic 3 1.0
+.vfile div.v div
+.vin 1 clk
+.vdrive 1 out
+.vlevel 0.0 5.0
